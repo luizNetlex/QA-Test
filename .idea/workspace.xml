@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d1f1ecd-d9af-4c50-9b71-fc2a40bf90ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tests/Cadastro/Teste 14/test14.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Cadastro/Teste 15/test15.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Cadastro/Teste 16/test16.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Cadastro/Teste 17/test17.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Login/Teste 01/test01.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Results/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/Results/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Results/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Results/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Results/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Results/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Cadastro/Teste 01/test01.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Cadastro/Teste 01/test01.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Cadastro/Teste 03/test03.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Cadastro/Teste 03/test03.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Cadastro/Teste 04/test04.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Cadastro/Teste 04/test04.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Cadastro/Teste 13/test13.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Cadastro/Teste 13/test13.robot" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -181,6 +171,11 @@
             <path>
               <item name="QA_Test" type="b2602c69:ProjectViewProjectNode" />
               <item name="QA_Test" type="462c0819:PsiDirectoryNode" />
+              <item name="Results" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QA_Test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QA_Test" type="462c0819:PsiDirectoryNode" />
               <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -233,6 +228,14 @@
       <option name="presentableId" value="Default" />
       <updated>1562550833174</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finalização do exercício">
+      <created>1562639546573</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562639546573</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -324,6 +327,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finalização do exercício" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalização do exercício" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Results/selenium-screenshot-1.png">
