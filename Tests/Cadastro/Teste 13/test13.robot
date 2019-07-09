@@ -23,7 +23,7 @@ O Usuário deve inserir uma senha contendo 1 letra maúscula, 1 caracter especia
     input text  id=bairro_cad  pompéu
     input text  name=cep  34518
     input text  name=cep2  090
-    input password  id=senha_cad  ftfA$1
+    input password  id=senha_cad  A@1abc
     click button  xpath=//*[@id="cadastro"]/form/p[9]/input
     Welcome Page Should Be Open
     [Teardown]    Close Browser

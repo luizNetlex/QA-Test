@@ -10,11 +10,12 @@ Library  SeleniumLibrary
 
 
 *** Test Cases ***
-Todos os campos do cadastro devem ser obrigatórios
-    [Documentation]  Cadastro feito sem o a informação de nome. O sistema não deve proceder com o cadastro
+O Usuário deve inserir uma senha contendo 1 letra maúscula, 1 caracter especial e 1 numero. Mínimo de 6 caracteres.
+    [Documentation]  Usuário insere a senha A12abc (deixando de incluir o caracter especial)
     [Tags]  Smoke
     Open Browser  https://letsbomfin.github.io/cadastro.github.io/  googlechrome
     wait until page contains  Seu nome
+    input text  id=nome_cad  Luiz Cunha
     input text  id=email_cad  luiz.cunha@netlex.com.br
     input text  id=estado_cad  minas gerais
     input text  id=cidade_cad  sabará
@@ -22,9 +23,9 @@ Todos os campos do cadastro devem ser obrigatórios
     input text  id=bairro_cad  pompéu
     input text  name=cep  34518
     input text  name=cep2  090
-    input password  id=senha_cad  ftfA$1
+    input password  id=senha_cad  A12abc
     click button  xpath=//*[@id="cadastro"]/form/p[9]/input
-    page should contain element  id=nome_cad
+    wait until page contains element  id=nome_cad
     [Teardown]    Close Browser
 
 

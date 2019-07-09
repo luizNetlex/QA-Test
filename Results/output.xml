@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.7.3 on darwin)" generated="20190708 01:01:44.790" rpa="false">
-<suite id="s1" name="Test10" source="/Users/luizfilipecunha/robot-scripts/QA_Test/Tests/Cadastro/Teste 10/test10.robot">
-<test id="s1-t1" name="Todos os campos do cadastro devem ser obrigatórios">
+<robot generator="Robot 3.1.2 (Python 3.7.3 on darwin)" generated="20190708 23:27:28.261" rpa="false">
+<suite id="s1" name="Test01" source="/Users/luizfilipecunha/robot-scripts/QA_Test/Tests/Login/Teste 01/test01.robot">
+<test id="s1-t1" name="Usuários cadastrados devem ser capazes de realizar Login no sistema">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>https://letsbomfin.github.io/cadastro.github.io/</arg>
 <arg>googlechrome</arg>
 </arguments>
-<msg timestamp="20190708 01:01:45.118" level="INFO">Opening browser 'googlechrome' to base url 'https://letsbomfin.github.io/cadastro.github.io/'.</msg>
-<status status="PASS" starttime="20190708 01:01:45.118" endtime="20190708 01:01:48.516"></status>
+<msg timestamp="20190708 23:27:28.667" level="INFO">Opening browser 'googlechrome' to base url 'https://letsbomfin.github.io/cadastro.github.io/'.</msg>
+<status status="PASS" starttime="20190708 23:27:28.667" endtime="20190708 23:27:32.565"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>Seu nome</arg>
 </arguments>
-<status status="PASS" starttime="20190708 01:01:48.517" endtime="20190708 01:01:48.662"></status>
+<status status="PASS" starttime="20190708 23:27:32.567" endtime="20190708 23:27:32.789"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -24,17 +24,17 @@
 <arg>id=nome_cad</arg>
 <arg>Luiz Cunha</arg>
 </arguments>
-<msg timestamp="20190708 01:01:48.664" level="INFO">Typing text 'Luiz Cunha' into text field 'id=nome_cad'.</msg>
-<status status="PASS" starttime="20190708 01:01:48.663" endtime="20190708 01:01:48.896"></status>
+<msg timestamp="20190708 23:27:32.790" level="INFO">Typing text 'Luiz Cunha' into text field 'id=nome_cad'.</msg>
+<status status="PASS" starttime="20190708 23:27:32.790" endtime="20190708 23:27:33.050"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>id=email_cad</arg>
-<arg>luiz.cunha@netlex.com.br</arg>
+<arg>${email}</arg>
 </arguments>
-<msg timestamp="20190708 01:01:48.897" level="INFO">Typing text 'luiz.cunha@netlex.com.br' into text field 'id=email_cad'.</msg>
-<status status="PASS" starttime="20190708 01:01:48.897" endtime="20190708 01:01:49.169"></status>
+<msg timestamp="20190708 23:27:33.051" level="INFO">Typing text 'luiz.cunha@netlex.com.br' into text field 'id=email_cad'.</msg>
+<status status="PASS" starttime="20190708 23:27:33.051" endtime="20190708 23:27:33.343"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -42,17 +42,8 @@
 <arg>id=estado_cad</arg>
 <arg>minas gerais</arg>
 </arguments>
-<msg timestamp="20190708 01:01:49.170" level="INFO">Typing text 'minas gerais' into text field 'id=estado_cad'.</msg>
-<status status="PASS" starttime="20190708 01:01:49.169" endtime="20190708 01:01:49.315"></status>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>id=cidade_cad</arg>
-<arg>sabará</arg>
-</arguments>
-<msg timestamp="20190708 01:01:49.316" level="INFO">Typing text 'sabará' into text field 'id=cidade_cad'.</msg>
-<status status="PASS" starttime="20190708 01:01:49.315" endtime="20190708 01:01:49.427"></status>
+<msg timestamp="20190708 23:27:33.344" level="INFO">Typing text 'minas gerais' into text field 'id=estado_cad'.</msg>
+<status status="PASS" starttime="20190708 23:27:33.344" endtime="20190708 23:27:33.532"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -60,8 +51,8 @@
 <arg>id=rua_cad</arg>
 <arg>rua um</arg>
 </arguments>
-<msg timestamp="20190708 01:01:49.428" level="INFO">Typing text 'rua um' into text field 'id=rua_cad'.</msg>
-<status status="PASS" starttime="20190708 01:01:49.428" endtime="20190708 01:01:49.545"></status>
+<msg timestamp="20190708 23:27:33.533" level="INFO">Typing text 'rua um' into text field 'id=rua_cad'.</msg>
+<status status="PASS" starttime="20190708 23:27:33.532" endtime="20190708 23:27:33.658"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -69,8 +60,17 @@
 <arg>id=bairro_cad</arg>
 <arg>pompéu</arg>
 </arguments>
-<msg timestamp="20190708 01:01:49.546" level="INFO">Typing text 'pompéu' into text field 'id=bairro_cad'.</msg>
-<status status="PASS" starttime="20190708 01:01:49.546" endtime="20190708 01:01:49.667"></status>
+<msg timestamp="20190708 23:27:33.658" level="INFO">Typing text 'pompéu' into text field 'id=bairro_cad'.</msg>
+<status status="PASS" starttime="20190708 23:27:33.658" endtime="20190708 23:27:33.829"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=cep</arg>
+<arg>34518</arg>
+</arguments>
+<msg timestamp="20190708 23:27:33.830" level="INFO">Typing text '34518' into text field 'name=cep'.</msg>
+<status status="PASS" starttime="20190708 23:27:33.830" endtime="20190708 23:27:34.037"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -78,51 +78,80 @@
 <arg>name=cep2</arg>
 <arg>090</arg>
 </arguments>
-<msg timestamp="20190708 01:01:49.668" level="INFO">Typing text '090' into text field 'name=cep2'.</msg>
-<status status="PASS" starttime="20190708 01:01:49.668" endtime="20190708 01:01:49.796"></status>
+<msg timestamp="20190708 23:27:34.038" level="INFO">Typing text '090' into text field 'name=cep2'.</msg>
+<status status="PASS" starttime="20190708 23:27:34.038" endtime="20190708 23:27:34.192"></status>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <doc>Types the given password into text field identified by ``locator``.</doc>
 <arguments>
 <arg>id=senha_cad</arg>
-<arg>ftfA$1</arg>
+<arg>${senha}</arg>
 </arguments>
-<msg timestamp="20190708 01:01:49.797" level="INFO">Typing password into text field 'id=senha_cad'.</msg>
-<status status="PASS" starttime="20190708 01:01:49.797" endtime="20190708 01:01:49.926"></status>
+<msg timestamp="20190708 23:27:34.193" level="INFO">Typing password into text field 'id=senha_cad'.</msg>
+<status status="PASS" starttime="20190708 23:27:34.192" endtime="20190708 23:27:34.482"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="cadastro"]/form/p[9]/input</arg>
 </arguments>
-<msg timestamp="20190708 01:01:49.926" level="INFO">Clicking button 'xpath=//*[@id="cadastro"]/form/p[9]/input'.</msg>
-<status status="PASS" starttime="20190708 01:01:49.926" endtime="20190708 01:01:50.093"></status>
+<msg timestamp="20190708 23:27:34.483" level="INFO">Clicking button 'xpath=//*[@id="cadastro"]/form/p[9]/input'.</msg>
+<status status="PASS" starttime="20190708 23:27:34.483" endtime="20190708 23:27:34.693"></status>
 </kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>page should contain element</arg>
+<arg>id=nome_cad</arg>
+</arguments>
+<assign>
+<var>${present}</var>
+</assign>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
 <arg>id=nome_cad</arg>
 </arguments>
+<msg timestamp="20190708 23:27:34.716" level="INFO">Current page contains element 'id=nome_cad'.</msg>
+<status status="PASS" starttime="20190708 23:27:34.695" endtime="20190708 23:27:34.716"></status>
+</kw>
+<msg timestamp="20190708 23:27:34.716" level="INFO">${present} = True</msg>
+<status status="PASS" starttime="20190708 23:27:34.694" endtime="20190708 23:27:34.716"></status>
+</kw>
+<kw name="Run Keyword And Return If" library="BuiltIn">
+<doc>Runs the specified keyword and returns from the enclosing user keyword.</doc>
+<arguments>
+<arg>${present}=='True'</arg>
+<arg>run keyword</arg>
+<arg>Exec Login</arg>
+</arguments>
+<status status="PASS" starttime="20190708 23:27:34.717" endtime="20190708 23:27:34.717"></status>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` disappears from current page.</doc>
+<arguments>
+<arg>id=nome_login</arg>
+</arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190708 01:01:50.420" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20190708 01:01:50.115" endtime="20190708 01:01:50.421"></status>
+<msg timestamp="20190708 23:27:40.091" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190708 23:27:39.737" endtime="20190708 23:27:40.092"></status>
 </kw>
-<msg timestamp="20190708 01:01:50.425" level="FAIL">Page should have contained element 'id=nome_cad' but did not.</msg>
-<status status="FAIL" starttime="20190708 01:01:50.093" endtime="20190708 01:01:50.426"></status>
+<msg timestamp="20190708 23:27:40.097" level="FAIL">Element 'id=nome_login' did not disappear in 5 seconds.</msg>
+<status status="FAIL" starttime="20190708 23:27:34.718" endtime="20190708 23:27:40.097"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="teardown">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20190708 01:01:50.426" endtime="20190708 01:01:50.532"></status>
+<status status="PASS" starttime="20190708 23:27:40.098" endtime="20190708 23:27:40.228"></status>
 </kw>
-<doc>Cadastro feito sem o a informação da primeira parte do CEP. O sistema não deve proceder com o cadastro</doc>
+<doc>Usuário preenche o cadastro com as informações corretas. Se o cadastro não for realizado, ele loga no sistema</doc>
 <tags>
 <tag>Smoke</tag>
 </tags>
-<status status="FAIL" starttime="20190708 01:01:45.116" endtime="20190708 01:01:50.532" critical="yes">Page should have contained element 'id=nome_cad' but did not.</status>
+<status status="FAIL" starttime="20190708 23:27:28.666" endtime="20190708 23:27:40.228" critical="yes">Element 'id=nome_login' did not disappear in 5 seconds.</status>
 </test>
 <doc>Testes na area de cadastro e login</doc>
-<status status="FAIL" starttime="20190708 01:01:44.792" endtime="20190708 01:01:50.540"></status>
+<status status="FAIL" starttime="20190708 23:27:28.264" endtime="20190708 23:27:40.234"></status>
 </suite>
 <statistics>
 <total>
@@ -133,7 +162,7 @@
 <stat pass="0" fail="1">Smoke</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="Test10">Test10</stat>
+<stat pass="0" fail="1" id="s1" name="Test01">Test01</stat>
 </suite>
 </statistics>
 <errors>

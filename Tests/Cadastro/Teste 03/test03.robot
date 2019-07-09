@@ -25,11 +25,8 @@ O campo e-mail deve ter validador @
     input text  name=cep2  090
     input password  id=senha_cad  ftfA$1
     click button  xpath=//*[@id="cadastro"]/form/p[9]/input
-    welcome page should be open
+    wait until page does not contain element  id=nome_cad
     [Teardown]    Close Browser
 
 
 *** Keywords ***
-
-Welcome Page Should Be Open
-    Title Should Be    Welcome Page
